@@ -22,6 +22,7 @@ Personal Life Administration Agent — MVP starter.
 
 ## Supabase values
 Find the project URL and publishable/anon key in Supabase Project Settings → API.
+Use the bare project URL (`https://YOUR_PROJECT_REF.supabase.co`) — not the `/rest/v1/` API endpoint.
 The browser key is designed to be public; database security comes from Row Level Security.
 Never put a Supabase service-role key or OpenAI API key in a `VITE_` variable.
 
