@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { type ChangeEvent, useEffect, useState } from "react";
 import { FileText, FileUp, Loader2, Sparkles, CalendarDays, CheckCircle2, AlertCircle, RefreshCw } from "lucide-react";
 import { supabase } from "../lib/supabase";
 import { useAuth } from "../contexts/AuthContext";
