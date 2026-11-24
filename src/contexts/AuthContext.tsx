@@ -44,9 +44,8 @@ export function AuthProvider({
       return;
     }
 
-    // Listen for the initial session and every subsequent
-    // authentication change from Supabase.
-    // This avoids competing getSession() and listener updates.
+    // Listen for the initial session and all subsequent
+    // authentication changes.
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(
@@ -61,6 +60,7 @@ export function AuthProvider({
     };
   }, []);
 
+  // Sign out and clear the local session.
   const signOut = async () => {
     if (!supabase) return;
 
