@@ -184,7 +184,7 @@ export default function Documents() {
         </section>
       )}
 
-      <div className="list-toolbar"><div><h2>Your documents</h2><p className="muted">{documents.length} uploaded document(s)</p></div><button className="icon-button" onClick={load} aria-label="Refresh documents"><RefreshCw size={16}/></button></div>
+      <button className="icon-button" onClick={loadDocuments} aria-label="Refresh documents"><RefreshCw size={16}/></button>
       <section className="surface-card list-card">
         {documents.length ? documents.map(doc=><div className="list-row" key={doc.id}><div className="list-icon"><FileText size={18}/></div><div className="list-main"><strong>{doc.file_name}</strong><span>{new Date(doc.created_at).toLocaleString()} · PDF</span></div><span className="status-pill">Uploaded</span></div>) : <div className="empty-state"><div className="empty-icon"><FileText size={22}/></div><strong>No documents uploaded yet</strong><p>Your private document library will appear here.</p></div>}
       </section>
