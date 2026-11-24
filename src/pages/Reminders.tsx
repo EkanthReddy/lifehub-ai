@@ -1,0 +1,2 @@
+import { Bell } from "lucide-react";
+export default function Reminders() { return <><div className="page-heading"><div><div className="eyebrow">STAY A STEP AHEAD</div><h1>Reminders</h1><p className="muted">A thoughtful nudge at the right time.</p></div></div><div className="surface-card"><div className="empty-state"><div className="empty-icon"><Bell size={22}/></div><strong>No reminders yet</strong><p>We'll add reminder scheduling after the inbox and event workflows are tested.</p><span className="coming-soon">Smart reminders · Coming next</span></div></div></>; }
