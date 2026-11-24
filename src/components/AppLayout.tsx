@@ -1,14 +1,16 @@
-import type { ReactNode } from "react";
+import { ReactNode } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { Bell, CalendarDays, ChevronDown, CircleHelp, FileText, LayoutDashboard, LogOut, Menu, Search, Sparkles, Inbox } from "lucide-react";
+import { Bell, CalendarDays, CircleHelp, FileText, Inbox, LayoutDashboard, LogOut, Menu, Search, Sparkles } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 
 const nav = [
   { to: "/dashboard", label: "Overview", icon: LayoutDashboard },
   { to: "/inbox", label: "Universal Inbox", icon: Inbox },
+  { to: "/documents", label: "Documents", icon: FileText },
   { to: "/events", label: "Life Events", icon: CalendarDays },
   { to: "/reminders", label: "Reminders", icon: Bell },
 ];
+
 export default function AppLayout({ children }: { children: ReactNode }) {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();

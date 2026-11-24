@@ -1,0 +1,12 @@
+
+/* Document upload and AI extraction */
+.upload-panel{display:flex;align-items:center;gap:14px;margin-top:20px;padding:17px;border:1px dashed #d9d8ef;border-radius:12px;background:#fbfbff}
+.upload-symbol{width:43px;height:43px;border-radius:12px;background:#eeedff;color:#6a62cf;display:grid;place-items:center;flex-shrink:0}
+.upload-copy{display:grid;gap:5px;flex:1;min-width:0}.upload-copy strong{font-size:12px;overflow-wrap:anywhere}.upload-copy span{font-size:10px;color:#9298aa}
+.secondary-button{border:1px solid #e3e4ed;border-radius:9px;padding:10px 13px;color:#555c72;background:#fff;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap}
+.extraction-card{margin-top:18px}.extraction-card h4{font:700 12px Manrope;color:#454b60;margin:20px 0 10px}.summary-text{font-size:12px;line-height:1.7;color:#6f768a;margin:17px 0}
+.detail-grid{display:flex;flex-wrap:wrap;gap:9px}.detail-chip{display:grid;gap:5px;padding:10px 12px;background:#f7f7fc;border:1px solid #ececf5;border-radius:9px}.detail-chip span{font-size:9px;color:#8d93a5}.detail-chip strong{font-size:12px;color:#3d4358}
+.date-choice{display:flex;align-items:center;gap:11px;padding:12px;border:1px solid #eceef4;border-radius:9px;margin:8px 0;cursor:pointer;color:#7770d6}.date-choice input{accent-color:#655ed0;width:15px;height:15px}.date-choice span{display:grid;gap:4px;flex:1;color:#42495e}.date-choice strong{font-size:11px}.date-choice small{font-size:10px;color:#8e95a7;line-height:1.5}
+.suggestion-list{font-size:11px;color:#6e7589;line-height:1.8;padding-left:18px}.approval-row{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid #eff0f5;padding-top:16px;margin-top:20px}.approval-row .muted{font-size:10px}.success-notice,.error-notice{display:flex;align-items:flex-start;gap:8px;margin-top:12px;padding:11px 13px;border-radius:9px;font-size:11px;line-height:1.5}.success-notice{background:#effaf5;color:#237b56;border:1px solid #d2f0e1}.error-notice{background:#fff4f1;color:#a54d37;border:1px solid #f5d8d0}
+.spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:650px){.upload-panel{align-items:stretch;flex-wrap:wrap}.upload-copy{flex-basis:calc(100% - 60px)}.secondary-button,.upload-panel .primary-button{flex:1}.approval-row{align-items:stretch;flex-direction:column}}
