@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Bell, CalendarDays, CircleHelp, FileText, Inbox, LayoutDashboard, LogOut, Menu, Search, Sparkles } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
